@@ -1,0 +1,16 @@
+<!--news.wxml-->
+
+  <view wx:for="{{array}}"
+  class="wrapper_news" bindtouchstart="navToDetail">
+    <view class="wrapper_title">
+      <view> {{item.title}}</view>
+      <view class="wrapper_btm">
+      <text class="wrapper_tag">{{item.tag}}</text>
+      <text class="wrapper_btmfont">{{item.sourcefrom}}</text>
+      </view>
+    </view>
+    <image class="wrapper_img" src="{{item.img}}"></image>
+    <view style="clear:both"></view>
+  </view>
+
+

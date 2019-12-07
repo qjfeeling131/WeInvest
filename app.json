@@ -2,7 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/productList/productList"
+    "pages/productList/productList",
+    "pages/news/news",
+    "pages/newsDetail/newsDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -39,6 +41,12 @@
         "iconPath": "images/nav/my.png",
         "selectedIconPath": "images/nav/my.png",
         "text": "我的"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "iconPath": "images/nav/instruction.png",
+        "selectedIconPath": "images/nav/instruction.png",
+        "text": "News"
       }
     ]
   },
