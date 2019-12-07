@@ -1,12 +1,13 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/productList/productList"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "We Invest",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -20,6 +21,12 @@
         "iconPath": "images/nav/instruction.png",
         "selectedIconPath": "images/nav/instruction.png",
         "text": "推荐"
+      },
+      {
+        "pagePath": "pages/productList/productList",
+        "iconPath": "images/nav/product.png",
+        "selectedIconPath": "images/nav/product.png",
+        "text": "服务"
       },
       {
         "pagePath": "pages/index/index",

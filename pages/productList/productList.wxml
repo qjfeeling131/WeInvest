@@ -1,0 +1,36 @@
+<view class="container">
+  <view class="search-view">
+    <view class="serarch-content">
+      <image src="/images/search.png" class="search-icon" />
+      <input placeholder="朝朝金" class="search-input" maxlength="30" confirm-type="搜索" bindinput='listenerSearchInput' bindconfirm='toSearch'>
+      </input>
+    </view>
+  </view>
+  <scroll-view scroll-x>
+    <view class="category-box" style='width:{{category_box_width}}rpx;'>
+      <view class="category-list" wx:for="{{categories}}" wx:key="*this">
+        <view class="category-column {{activeCategoryId == item.id ? 'type-item-on' : ''}}" bindtap="tabClick" id="{{item.id}}">
+          <image class="category-imgbox" src="{{item.icon}}"></image>
+          <view class="category-title">{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="items-container">
+    <view class="items-box" wx:for-items="{{items}}" wx:key="{{index}}" bindtap="toDetailsTap" data-id="{{item.id}}">
+      <view class="items-title">{{item.name}}</view>
+      <view class="items-title">Comapny: {{item.company}}</view>
+      <view class="items-title">Annual Interest Rate: {{item.rate}}</view>
+      <view class="items-title">per 10,000 can earn: {{item.prospectiveEarnings}}</view>
+      <view class="items-title">Risk Rate: {{item.riskRate}}</view>
+      <view class="items-title">Invest Cycle: {{item.investCycle}}</view>
+      <checkbox class="items-title"/>
+    </view>
+  </view>
+  <view hidden="{{loadingMoreHidden ? true : false}}" class="weui-loadmore weui-loadmore_line" style='margin-top:60rpx;margin-bottom:30rpx;'>
+    <view class="weui-loadmore__tips weui-loadmore__tips_in-line">it's at the bottom</view>
+  </view>
+</view>
+<view class='coupons-float' bindtap="goCoupons">
+  <image src="/images/compare.png"></image>
+</view>
