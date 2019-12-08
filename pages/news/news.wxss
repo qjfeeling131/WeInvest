@@ -1,9 +1,7 @@
 /* pages/news/news.wxss */
 
 .wrapper_news{
-  margin:8px;
-	width: 300px;
-	
+  margin:8px;	
 	background-color: rgba(255, 255, 255, 1);
 }
 .wrapper_tag{

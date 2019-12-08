@@ -4,7 +4,9 @@
     "pages/logs/logs",
     "pages/productList/productList",
     "pages/news/news",
-    "pages/newsDetail/newsDetail"
+    "pages/newsDetail/newsDetail",
+    "pages/productCompare/index",
+    "pages/my/my"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -20,33 +22,27 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "images/nav/instruction.png",
-        "selectedIconPath": "images/nav/instruction.png",
-        "text": "推荐"
-      },
-      {
-        "pagePath": "pages/productList/productList",
-        "iconPath": "images/nav/product.png",
-        "selectedIconPath": "images/nav/product.png",
-        "text": "服务"
-      },
-      {
-        "pagePath": "pages/index/index",
-        "iconPath": "images/nav/address.png",
-        "selectedIconPath": "images/nav/address.png",
-        "text": "本地"
-      },
-      {
-        "pagePath": "pages/index/index",
-        "iconPath": "images/nav/my.png",
-        "selectedIconPath": "images/nav/my.png",
-        "text": "我的"
+        "iconPath": "images/nav/home.png",
+        "selectedIconPath": "images/nav/home.png",
+        "text": "Home"
       },
       {
         "pagePath": "pages/news/news",
         "iconPath": "images/nav/instruction.png",
         "selectedIconPath": "images/nav/instruction.png",
         "text": "News"
+      },
+      {
+        "pagePath": "pages/productList/productList",
+        "iconPath": "images/nav/product.png",
+        "selectedIconPath": "images/nav/product.png",
+        "text": "Service"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "images/nav/my.png",
+        "selectedIconPath": "images/nav/my.png",
+        "text": "My"
       }
     ]
   },

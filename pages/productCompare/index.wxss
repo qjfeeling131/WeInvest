@@ -1,0 +1,19 @@
+.container {
+  background-color: #F2f2f2;
+  min-height: 100%;
+}
+
+.items-container{
+  display: flex;
+  justify-content: space-between;  
+  flex-wrap:wrap;
+  box-sizing: content-box;
+  padding: 24rpx;
+}
+.items-box{
+  width: 339rpx;
+  height: 550rpx;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 24rpx;
+}

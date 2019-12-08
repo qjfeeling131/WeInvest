@@ -1,18 +1,18 @@
 var data = [{
   "id": 1,
-  "name": "理财",
+  "name": "Finance",
   "icon": '/images/finanical.png'
 }, {
   "id": 2,
-  "name": '基金',
+  "name": 'Fund',
   "icon": '/images/finanical.png'
 }, {
   "id": 3,
-  "name": "债券",
+  "name": "Bond",
   "icon": '/images/finanical.png'
 }, {
   "id": 4,
-  "name": "贷款",
+  "name": "Loans",
   "icon": '/images/finanical.png'
 }]
 

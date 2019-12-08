@@ -55,8 +55,8 @@ Page({
   },
   //事件处理函数
   navToDetail: function () {
-    wx.redirectTo({
-      url: '../newsDetail/newsDetail'
+    wx.navigateTo({
+      url: '/pages/newsDetail/newsDetail'
     })
   },
   onLoad: function () {

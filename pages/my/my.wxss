@@ -1,0 +1,48 @@
+/* pages/identity/identity.wxss */
+.userinfo {
+  height: 180rpx;
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 100rpx;
+	height: 100rpx;
+	margin: 30rpx;
+	background-color: rgba(238, 238, 238, 1);
+	border-radius: 50%;
+}
+
+.userinfo-nickname {
+  width: 264rpx;
+	height: 44rpx;
+	color: rgba(255, 255, 255, 1);
+	font-size: 28rpx;
+	line-height: 150%;
+	text-align: left;
+	font-weight: bold;
+}
+
+.personalInfoBar{
+  font-size: 35rpx;
+	line-height: 150%;
+	text-align: left;
+	font-weight: bold; 
+  text-overflow:ellipsis;
+  border-bottom-style:solid;
+  border-bottom-width:1rpx;
+  border-bottom-color: rgb(92, 56, 56);
+  margin-top:20rpx;
+}
+
+.personalInfoKey{
+  padding: 15px;
+}
+.personalInfoValue{
+  margin-right: 15px;
+  float: right;
+}
+
+

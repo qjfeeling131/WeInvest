@@ -14,6 +14,7 @@ Page({
     pageSize: 10,
     cateScrollTop: 0,
     items: [],
+    comapreItems: [],
   },
   onLoad() {
     this.setData({
@@ -23,6 +24,19 @@ Page({
       nbBackgroundColor: '#000000',
       categories: categoriesJson.categories,
     })
+  },
+  onReachBottom: function() {
+    this.setData({
+      curPage: this.data.curPage + 1
+    });
+    this.getItemsList(this.data.activeCategoryId, true)
+  },
+  onPullDownRefresh: function() {
+    this.setData({
+      curPage: 1
+    });
+    this.getItemsList(this.data.activeCategoryId)
+    wx.stopPullDownRefresh()
   },
   tabClick: function(e) {
     let offset = e.currentTarget.offsetLeft;
@@ -72,24 +86,27 @@ Page({
           that.setData(newData);
         }
         break;
+      default:
+        //Just show the financial products in this prototype
+        this.setData({
+          items: []
+        });
+        break;
     }
     wx.hideLoading()
+  },
+  checkboxChange: function(e) {
+    this.setData({
+      comapreItems: e.detail.value
+    })
+  },
+  navToCompare: function(e) {
+    wx.navigateTo({
+      url: '/pages/productCompare/index?itemIds='+JSON.stringify(this.data.comapreItems),
+    })
   },
   paging: function(pageNo, pageSize, array) {
     var offset = (pageNo - 1) * pageSize;
     return (offset + pageSize >= array.length) ? array.slice(offset, array.length) : array.slice(offset, offset + pageSize);
-  },
-  onReachBottom: function () {
-    this.setData({
-      curPage: this.data.curPage + 1
-    });
-    this.getItemsList(this.data.activeCategoryId, true)
-  },
-  onPullDownRefresh: function () {
-    this.setData({
-      curPage: 1
-    });
-    this.getItemsList(this.data.activeCategoryId)
-    wx.stopPullDownRefresh()
   }
 })

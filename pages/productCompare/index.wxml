@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="item-container">
+    <view class="items-box" wx:for="{{compareImtes}}" wx:key="{{index}}" data-id="{{item.id}}">
+      <view class="items-title">{{item.name}}</view>
+      <view class="items-title">Comapny: {{item.company}}</view>
+      <view class="items-title">Annual Interest Rate: {{item.rate}}</view>
+      <view class="items-title">per 10,000 can earn: {{item.prospectiveEarnings}}</view>
+      <view class="items-title">Risk Level: {{item.risk}}</view>
+      <view class="items-title">Risk Rate: {{item.riskRate}}</view>
+      <view class="items-title">Instruction: {{item.instruction}}</view>
+      <view class="items-title">Start Date: {{item.purchaseStartDate}}</view>
+      <view class="items-title">End Date: {{item.purchaseEndDate}}</view>
+      <view class="items-title">Minimum Investment Amount: {{item.minimumInvestmentAmount}}</view>
+      <view wx:if="{{item.best}}">
+        <checkbox class="items-title" checked="{{item.best}}" /> Best Products
+      </view>
+    </view>
+
+  </view>
+</view>
