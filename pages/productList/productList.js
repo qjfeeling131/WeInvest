@@ -4,15 +4,10 @@ const financialProductsJson = require('../../data/financialProducts.js');
 Page({
 
   data: {
-    nbFrontColor: '#000000',
-    nbBackgroundColor: '#ffffff',
     activeCategoryId: 0,
-    scrollTop: 0,
     loadingMoreHidden: true,
-    coupons: [],
     curPage: 1,
     pageSize: 10,
-    cateScrollTop: 0,
     items: [],
     comapreItems: [],
   },
